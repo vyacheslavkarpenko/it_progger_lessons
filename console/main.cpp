@@ -1,5 +1,6 @@
 // Include standard c librart
 #include <iostream>
+#include <Windows.h>
 
 int main() {
 	// First important comment.
@@ -10,7 +11,9 @@ int main() {
 	std::cout << "World is beautiful, and interesting thing!!!\n" << std::endl;
 
 	// Set Urkrainian language for next output.
-	setlocale(LC_CTYPE, "ukr");
+	//setlocale(LC_CTYPE, "ukr");
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
 
 	std::cout << "Українська влада - популісти!!!" << std::endl;
 	std::cout << "Українці це потужна сила!!!" << std::endl;
