@@ -14,7 +14,7 @@ void resultPrinter(char, string);
 void ifElseCalculator(float, float, char);
 void switchCaseCalculator(float, float, char);
 
-int main()
+int calculator()
 {
     cout << "Simple calculator" << endl;
     

@@ -128,7 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="calculator.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mathematical operations.cpp" />
     <ClCompile Include="random numbers.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="calculator.h" />
+    <ClInclude Include="mathematical operations.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
