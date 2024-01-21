@@ -16,15 +16,23 @@ void switchCaseCalculator(float, float, char);
 
 int calculator()
 {
+    cout << endl;
     cout << "Simple calculator" << endl;
     
-    cout << "Input float number 1 like 1.2" << endl;
-    cin >> number1;    
-    cout << "Input float number 2 like 1.2" << endl;
+    cout << endl;
+    cout << "Input float for number1 variable like 1.2" << endl;
+    cin >> number1;
+    cout << endl;
+
+    cout << endl;
+    cout << "Input float for number2 variable like 1.2" << endl;
     cin >> number2;
+    cout << endl;
     
+    cout << endl;
     cout << "Input one of math operators like '+, -, *, /'" << endl;
     cin >> mathOperator;
+    cout << endl;
 
     ifElseCalculator(number1, number2, mathOperator);
     switchCaseCalculator(number1, number2, mathOperator);
@@ -35,8 +43,10 @@ int calculator()
 }
 
 void resultPrinter(float result, string message) {
+    cout << endl;
     cout << "Printed by " << message << " calculator!" << endl;
     cout << "The result = " << result << endl;
+    cout << endl;
 }
 
 void ifElseCalculator(float number1, float number2, char mathOperator) {

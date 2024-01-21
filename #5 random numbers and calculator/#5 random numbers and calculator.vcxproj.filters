@@ -27,12 +27,18 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="random numers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="calculator.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="mathematical operations.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="random numbers.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

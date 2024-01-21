@@ -1,21 +1,23 @@
 #include <iostream>
 #include "calculator.h"
 #include "mathematical operations.h"
+#include "random numbers.h"
 
 using namespace std;
 
 int menuSelector = 0;
 bool exitProgram = false;
-char exitProgramFlag = '0';
+char exitProgramFlag;
 
 int mainMenu();
 int announcement();
 int runScriptOrExit();
-int executor();
+int switchExecutor();
 bool setExitProgramFlag(char);
 
 int main()
 {
+	announcement();
 	
 	do 
 	{
@@ -23,12 +25,11 @@ int main()
 		if (exitProgram)
 			return 0;
 
-	    announcement();
 		mainMenu();
 		
 		cin >> menuSelector;
 		
-		executor();
+		switchExecutor();
 		
 		menuSelector = 0;
 
@@ -41,13 +42,15 @@ int announcement()
 	cout << "Here are some mathimatics opearions." << endl;
 	cout << endl;
 
+	// TODO check implementation of void
 	return 0;
 }
 
 int mainMenu() {
-		cout << "Calculator demonstration input '1'." << endl;
-		cout << "Other math operations input '2'." << endl;
-		cout << "Math function 'rand()' input '3'." << endl;
+		cout << endl;
+		cout << "Calculator demonstration - input '1'." << endl;
+		cout << "Other math operations - input '2'." << endl;
+		cout << "Math function 'rand()' - input '3'." << endl;
 		cout << endl;
 
 		return 0;
@@ -55,9 +58,8 @@ int mainMenu() {
 
 int runScriptOrExit()
 {
-	cout << "menuSelector is " << menuSelector << endl;
 	cout << endl;
-	cout << "Press '1' to exit, press '0' to select menu selector." << endl;
+	cout << "Press '1' to continue, press another char to exit." << endl;
 	cout << endl;
 
 	cin >> exitProgramFlag;
@@ -68,24 +70,24 @@ int runScriptOrExit()
 }
 
 
-int executor()
+int switchExecutor()
 {
 	if (menuSelector == 1)
-	{
 		calculator();
-	}
 	else if (menuSelector == 2)
-	{
 		mathematicalOperations();
-
-	}
-
+	else if (menuSelector == 3)
+		randomNumbers();
+	else
+		system("pause");
+		cout << "Wrong menu selector." << endl;
+		setExitProgramFlag('0');
 	return 0;
 }
 
 bool setExitProgramFlag(char exitProgramFlag)
 {
-	if (exitProgramFlag == '1')
+	if (exitProgramFlag != '1')
 		exitProgram = true;
 
 	return 0;
