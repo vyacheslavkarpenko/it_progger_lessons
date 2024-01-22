@@ -25,8 +25,9 @@ int mathematicalOperations()
 	resultTwo = numberThree % numberFour;
 	cout << numberThree << " % " << numberFour << "  = " << resultTwo << endl;
 
-	// Short operations
-
-
+	// Using some operators
+	int example1 = numberFour += 2; // 10
+	cout << "example1 =  " << example1 << endl;
+ 
 	return 0;
 }

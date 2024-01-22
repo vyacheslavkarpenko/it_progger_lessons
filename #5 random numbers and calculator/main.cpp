@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int menuSelector = 0;
+int menuSelector;
 bool exitProgram = false;
 char exitProgramFlag;
 
@@ -79,9 +79,9 @@ int switchExecutor()
 	else if (menuSelector == 3)
 		randomNumbers();
 	else
-		system("pause");
-		cout << "Wrong menu selector." << endl;
-		setExitProgramFlag('0');
+//		system("pause");
+//		cout << "Wrong menu selector." << menuSelector << endl;
+//		setExitProgramFlag('0');
 	return 0;
 }
 
