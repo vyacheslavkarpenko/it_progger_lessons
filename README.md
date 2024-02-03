@@ -11,5 +11,6 @@
 * [Изучение C++ для начинающих / #5 – Случайные числа. Разработка Калькулятора](https://www.youtube.com/watch?v=UB1eyj1LJyI)
 * [Изучение C++ для начинающих / #6 – Циклы и операторы в них (For, While, Do While)](https://www.youtube.com/watch?v=Rd10XYY94dI&t=4s)
 * [Изучение C++ для начинающих / #7 – Массивы данных (одномерные и многомерные)](https://www.youtube.com/watch?v=702lSkBg5so)
-
+* [Изучение C++ для начинающих / #8 – Динамический массив данных](https://www.youtube.com/watch?v=P8oANnmWNM8)
+* [Изучение C++ для начинающих / #9 – Работа со строками и символами](https://www.youtube.com/watch?v=zQ8YBJCpsx4)
 
